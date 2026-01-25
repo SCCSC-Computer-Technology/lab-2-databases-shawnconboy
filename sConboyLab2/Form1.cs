@@ -33,5 +33,49 @@ namespace sConboyLab2
             this.cityTableAdapter.Fill(this.cityDBDataSet.City);
 
         }
+
+        private void populationAscendingButton_Click(object sender, EventArgs e)
+        {
+            this.cityTableAdapter.SortPopulationAscending(this.cityDBDataSet.City);
+        }
+
+        private void populationDescendingButton_Click(object sender, EventArgs e)
+        {
+            this.cityTableAdapter.SortPopulationDescending(this.cityDBDataSet.City);
+        }
+
+        private void citiesByName_Click(object sender, EventArgs e)
+        {
+            this.cityTableAdapter.SortCityName(this.cityDBDataSet.City);
+        }
+
+        private void totalButton_Click(object sender, EventArgs e)
+        {
+            decimal totalPopulation = 0;
+            totalPopulation = (decimal) this.cityTableAdapter.PopulationSum();
+            informationLabel.Text = totalPopulation.ToString("N0");
+
+        }
+
+        private void averageButton_Click(object sender, EventArgs e)
+        {
+            decimal averagePopulation = 0;
+            averagePopulation = (decimal) this.cityTableAdapter.PopulationAverage();
+            informationLabel.Text = averagePopulation.ToString("N0");
+        }
+
+        private void lowestButton_Click(object sender, EventArgs e)
+        {
+            decimal lowestPopulation = 0;
+            lowestPopulation = (decimal) this.cityTableAdapter.PopulationMin();
+            informationLabel.Text = lowestPopulation.ToString("N0");
+        }
+
+        private void highestButton_Click(object sender, EventArgs e)
+        {
+            decimal highestPopulation = 0;
+            highestPopulation = (decimal) (this.cityTableAdapter.PopulationMax());
+            informationLabel.Text = (highestPopulation.ToString("N0"));
+        }
     }
 }

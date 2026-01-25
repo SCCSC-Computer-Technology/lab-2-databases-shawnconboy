@@ -7,7 +7,11 @@
       "RelativeMoniker": "D:0:0:{232B1CC8-638E-4955-9656-69A2E3A1928B}|sConboyLab2.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{232B1CC8-638E-4955-9656-69A2E3A1928B}|sConboyLab2.csproj|c:\\users\\shawn\\documents\\lab-2-databases-shawnconboy\\sconboylab2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{232B1CC8-638E-4955-9656-69A2E3A1928B}|sConboyLab2.csproj|c:\\users\\shawn\\documents\\lab-2-databases-shawnconboy\\sconboylab2\\citydbdataset.xsd||{07AC752B-D2B0-4DCD-AD9C-237BF561A30A}",
+      "RelativeMoniker": "D:0:0:{232B1CC8-638E-4955-9656-69A2E3A1928B}|sConboyLab2.csproj|solutionrelative:citydbdataset.xsd||{07AC752B-D2B0-4DCD-AD9C-237BF561A30A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{232B1CC8-638E-4955-9656-69A2E3A1928B}|sConboyLab2.csproj|C:\\Users\\shawn\\Documents\\lab-2-databases-shawnconboy\\sConboyLab2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{232B1CC8-638E-4955-9656-69A2E3A1928B}|sConboyLab2.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -18,21 +22,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\shawn\\Documents\\lab-2-databases-shawnconboy\\sConboyLab2\\Form1.cs",
-              "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\Users\\shawn\\Documents\\lab-2-databases-shawnconboy\\sConboyLab2\\Form1.cs",
-              "RelativeToolTip": "Form1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAABoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-25T04:22:55.355Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -44,6 +35,31 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-25T04:15:36.482Z",
               "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CityDBDataSet.xsd",
+              "DocumentMoniker": "C:\\Users\\shawn\\Documents\\lab-2-databases-shawnconboy\\sConboyLab2\\CityDBDataSet.xsd",
+              "RelativeDocumentMoniker": "CityDBDataSet.xsd",
+              "ToolTip": "C:\\Users\\shawn\\Documents\\lab-2-databases-shawnconboy\\sConboyLab2\\CityDBDataSet.xsd",
+              "RelativeToolTip": "CityDBDataSet.xsd",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003579|",
+              "WhenOpened": "2026-01-25T04:39:21.305Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\shawn\\Documents\\lab-2-databases-shawnconboy\\sConboyLab2\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "C:\\Users\\shawn\\Documents\\lab-2-databases-shawnconboy\\sConboyLab2\\Form1.cs",
+              "RelativeToolTip": "Form1.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAIwEoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-25T04:22:55.355Z",
+              "EditorCaption": ""
             }
           ]
         }
