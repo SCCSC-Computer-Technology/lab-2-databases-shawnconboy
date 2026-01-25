@@ -1,4 +1,14 @@
-﻿using System;
+﻿// Shawn Conboy
+// CPT 206 A01H
+// Lab 2 Database Population type thingamabob.
+
+// There's lots of room for improvement. Uh...
+// The buttons all work. But the data being highlighted 
+// the min and max buttons, so that you see exactly which record
+// matches the min and max would be nice. Or possibly just another
+// label to show the city would be nice.
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -26,13 +36,16 @@ namespace sConboyLab2
 
         }
 
-        // on load, but added  automatically. data grid view controller is filled with that line of code
+        // on load, but added automatically. data grid view controller is filled with that line of code
         private void Form1_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'cityDBDataSet.City' table. You can move, or remove it, as needed.
             this.cityTableAdapter.Fill(this.cityDBDataSet.City);
 
         }
+
+
+        // this is where all the on click methods start...... _____________________________________
 
         private void populationAscendingButton_Click(object sender, EventArgs e)
         {
@@ -53,29 +66,37 @@ namespace sConboyLab2
         {
             decimal totalPopulation = 0;
             totalPopulation = (decimal) this.cityTableAdapter.PopulationSum();
-            informationLabel.Text = totalPopulation.ToString("N0");
+            cityPopulationLabel.Text = totalPopulation.ToString("N0");
 
+            cityNameLabel.Text = "Total";
         }
 
         private void averageButton_Click(object sender, EventArgs e)
         {
             decimal averagePopulation = 0;
             averagePopulation = (decimal) this.cityTableAdapter.PopulationAverage();
-            informationLabel.Text = averagePopulation.ToString("N0");
+            cityPopulationLabel.Text = averagePopulation.ToString("N0");
+            cityNameLabel.Text = "Average";
         }
 
         private void lowestButton_Click(object sender, EventArgs e)
         {
             decimal lowestPopulation = 0;
             lowestPopulation = (decimal) this.cityTableAdapter.PopulationMin();
-            informationLabel.Text = lowestPopulation.ToString("N0");
+            cityPopulationLabel.Text = lowestPopulation.ToString("N0");
+
+            string cityName = (string)(this.cityTableAdapter.MinCityName());
+            cityNameLabel.Text = cityName;
         }
 
         private void highestButton_Click(object sender, EventArgs e)
         {
             decimal highestPopulation = 0;
             highestPopulation = (decimal) (this.cityTableAdapter.PopulationMax());
-            informationLabel.Text = (highestPopulation.ToString("N0"));
+            cityPopulationLabel.Text = (highestPopulation.ToString("N0"));
+
+            string cityName = (string)(this.cityTableAdapter.MaxCityName());
+            cityNameLabel.Text = cityName;
         }
     }
 }

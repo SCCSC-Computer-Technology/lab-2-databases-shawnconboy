@@ -45,22 +45,24 @@
             this.cityBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.cityDataGridView = new System.Windows.Forms.DataGridView();
             this.populationAscendingButton = new System.Windows.Forms.Button();
-            this.cityBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.cityDBDataSet = new sConboyLab2.CityDBDataSet();
-            this.cityTableAdapter = new sConboyLab2.CityDBDataSetTableAdapters.CityTableAdapter();
-            this.tableAdapterManager = new sConboyLab2.CityDBDataSetTableAdapters.TableAdapterManager();
             this.label1 = new System.Windows.Forms.Label();
             this.populationDescendingButton = new System.Windows.Forms.Button();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.citiesByName = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.informationLabel = new System.Windows.Forms.Label();
+            this.cityPopulationLabel = new System.Windows.Forms.Label();
             this.totalButton = new System.Windows.Forms.Button();
             this.averageButton = new System.Windows.Forms.Button();
             this.lowestButton = new System.Windows.Forms.Button();
             this.highestButton = new System.Windows.Forms.Button();
+            this.cityNameLabel = new System.Windows.Forms.Label();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cityBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.cityDBDataSet = new sConboyLab2.CityDBDataSet();
+            this.cityTableAdapter = new sConboyLab2.CityDBDataSetTableAdapters.CityTableAdapter();
+            this.tableAdapterManager = new sConboyLab2.CityDBDataSetTableAdapters.TableAdapterManager();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.cityBindingNavigator)).BeginInit();
             this.cityBindingNavigator.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cityDataGridView)).BeginInit();
@@ -218,26 +220,6 @@
             this.populationAscendingButton.UseVisualStyleBackColor = true;
             this.populationAscendingButton.Click += new System.EventHandler(this.populationAscendingButton_Click);
             // 
-            // cityBindingSource
-            // 
-            this.cityBindingSource.DataMember = "City";
-            this.cityBindingSource.DataSource = this.cityDBDataSet;
-            // 
-            // cityDBDataSet
-            // 
-            this.cityDBDataSet.DataSetName = "CityDBDataSet";
-            this.cityDBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // cityTableAdapter
-            // 
-            this.cityTableAdapter.ClearBeforeFill = true;
-            // 
-            // tableAdapterManager
-            // 
-            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager.CityTableAdapter = this.cityTableAdapter;
-            this.tableAdapterManager.UpdateOrder = sConboyLab2.CityDBDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -256,24 +238,6 @@
             this.populationDescendingButton.Text = "Population Highest First";
             this.populationDescendingButton.UseVisualStyleBackColor = true;
             this.populationDescendingButton.Click += new System.EventHandler(this.populationDescendingButton_Click);
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "City";
-            this.dataGridViewTextBoxColumn2.HeaderText = "City";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "State";
-            this.dataGridViewTextBoxColumn3.HeaderText = "State";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "Population";
-            this.dataGridViewTextBoxColumn4.HeaderText = "Population";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             // 
             // citiesByName
             // 
@@ -294,17 +258,17 @@
             this.label2.TabIndex = 6;
             this.label2.Text = "Population information";
             // 
-            // informationLabel
+            // cityPopulationLabel
             // 
-            this.informationLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.informationLabel.Location = new System.Drawing.Point(561, 251);
-            this.informationLabel.Name = "informationLabel";
-            this.informationLabel.Size = new System.Drawing.Size(192, 23);
-            this.informationLabel.TabIndex = 7;
+            this.cityPopulationLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.cityPopulationLabel.Location = new System.Drawing.Point(561, 283);
+            this.cityPopulationLabel.Name = "cityPopulationLabel";
+            this.cityPopulationLabel.Size = new System.Drawing.Size(192, 23);
+            this.cityPopulationLabel.TabIndex = 7;
             // 
             // totalButton
             // 
-            this.totalButton.Location = new System.Drawing.Point(561, 290);
+            this.totalButton.Location = new System.Drawing.Point(561, 321);
             this.totalButton.Name = "totalButton";
             this.totalButton.Size = new System.Drawing.Size(86, 23);
             this.totalButton.TabIndex = 8;
@@ -314,7 +278,7 @@
             // 
             // averageButton
             // 
-            this.averageButton.Location = new System.Drawing.Point(681, 290);
+            this.averageButton.Location = new System.Drawing.Point(681, 321);
             this.averageButton.Name = "averageButton";
             this.averageButton.Size = new System.Drawing.Size(86, 23);
             this.averageButton.TabIndex = 8;
@@ -324,7 +288,7 @@
             // 
             // lowestButton
             // 
-            this.lowestButton.Location = new System.Drawing.Point(561, 329);
+            this.lowestButton.Location = new System.Drawing.Point(561, 360);
             this.lowestButton.Name = "lowestButton";
             this.lowestButton.Size = new System.Drawing.Size(86, 23);
             this.lowestButton.TabIndex = 8;
@@ -334,7 +298,7 @@
             // 
             // highestButton
             // 
-            this.highestButton.Location = new System.Drawing.Point(681, 329);
+            this.highestButton.Location = new System.Drawing.Point(681, 360);
             this.highestButton.Name = "highestButton";
             this.highestButton.Size = new System.Drawing.Size(86, 23);
             this.highestButton.TabIndex = 8;
@@ -342,16 +306,73 @@
             this.highestButton.UseVisualStyleBackColor = true;
             this.highestButton.Click += new System.EventHandler(this.highestButton_Click);
             // 
+            // cityNameLabel
+            // 
+            this.cityNameLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.cityNameLabel.Location = new System.Drawing.Point(561, 247);
+            this.cityNameLabel.Name = "cityNameLabel";
+            this.cityNameLabel.Size = new System.Drawing.Size(192, 23);
+            this.cityNameLabel.TabIndex = 7;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "City";
+            this.dataGridViewTextBoxColumn2.HeaderText = "City";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "State";
+            this.dataGridViewTextBoxColumn3.HeaderText = "State";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "Population";
+            this.dataGridViewTextBoxColumn4.HeaderText = "Population";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            // 
+            // cityBindingSource
+            // 
+            this.cityBindingSource.DataMember = "City";
+            this.cityBindingSource.DataSource = this.cityDBDataSet;
+            // 
+            // cityDBDataSet
+            // 
+            this.cityDBDataSet.DataSetName = "CityDBDataSet";
+            this.cityDBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // cityTableAdapter
+            // 
+            this.cityTableAdapter.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager
+            // 
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.CityTableAdapter = this.cityTableAdapter;
+            this.tableAdapterManager.UpdateOrder = sConboyLab2.CityDBDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(33, 50);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(82, 13);
+            this.label3.TabIndex = 9;
+            this.label3.Text = "City Populations";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 492);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.highestButton);
             this.Controls.Add(this.lowestButton);
             this.Controls.Add(this.averageButton);
             this.Controls.Add(this.totalButton);
-            this.Controls.Add(this.informationLabel);
+            this.Controls.Add(this.cityNameLabel);
+            this.Controls.Add(this.cityPopulationLabel);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.citiesByName);
             this.Controls.Add(this.populationDescendingButton);
@@ -402,11 +423,13 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.Button citiesByName;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label informationLabel;
+        private System.Windows.Forms.Label cityPopulationLabel;
         private System.Windows.Forms.Button totalButton;
         private System.Windows.Forms.Button averageButton;
         private System.Windows.Forms.Button lowestButton;
         private System.Windows.Forms.Button highestButton;
+        private System.Windows.Forms.Label cityNameLabel;
+        private System.Windows.Forms.Label label3;
     }
 }
 
