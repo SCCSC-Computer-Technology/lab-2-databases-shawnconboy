@@ -1,0 +1,20 @@
+Heinrich Gottberg Code Review of ShawnConboy Lab 2
+
+Is the code generally readable and well-documented?
+
+	Yes, there are comments detailing the different functions. The code is well 	organized and no obvious blank space.
+
+Did you find any software defects?
+
+	No, the program ran as expected. The database imported all the data 	accurately.
+
+What was one way that their solution differed from yours?
+
+	Shawn used labels while I used message boxes. Overall the program achieves 	the same functionality as mine.
+
+Do you have any other constructive comments for the author?
+
+	You could work on your GUI, but as long as it functions. This lab doesn't 	require the most comprehensive GUI.
+
+This is a solid program, with more time it could be spiced up in the visual department but we aren't running a beauty contest. Good work.
+
